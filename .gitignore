@@ -1,0 +1,10 @@
+.classpath
+.project
+.settings/
+*~
+expat-mix-grailsPlugins.iml
+expat-mix.iml
+expat-mix.ipr
+expat-mix.iws
+target/
+
