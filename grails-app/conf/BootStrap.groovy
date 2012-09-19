@@ -29,6 +29,18 @@ class BootStrap {
             println fred.errors
         }
 
+        def steph = new User(login: "steph",
+                name: "Stéphane",
+                gender: "M",
+                password: "toto", mail: "s@gmail.com",
+                birthDate: new Date(),
+                city: "Houilles"
+        )
+        steph.save()
+        if (steph.hasErrors()) {
+            println steph.errors
+        }
+
         def anel = new User(login: "anel",
                 name: "Anel",
                 gender: "F",
@@ -48,7 +60,7 @@ class BootStrap {
                 language: "FR, EN",
                 place: "Houilles")
         //webSiteCreation.addToParticipants(manu)
-        webSiteCreation.addToParticipants(fred)
+        webSiteCreation.addToParticipants(steph)
         webSiteCreation.save()
 
     }
